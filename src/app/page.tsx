@@ -144,7 +144,7 @@ const services = [
     icon: <FileText className="w-7 h-7" />,
   },
   {
-    title: "Trademark & Copyright",
+    title: "IPR Registration",
     description: "Comprehensive trademark and copyright registration, including opposition proceedings.",
     icon: <Shield className="w-7 h-7" />,
   },
@@ -154,7 +154,7 @@ const services = [
     icon: <Scale className="w-7 h-7" />,
   },
   {
-    title: "Corporate Compliance",
+    title: "Company Registration and Compliances",
     description: "Ensuring compliance with legal regulations for smooth, uninterrupted business operations.",
     icon: <Building2 className="w-7 h-7" />,
   },

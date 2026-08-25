@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -24,6 +25,8 @@ export default function Header() {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link href="/" className="flex-shrink-0 flex items-center">
+            {/* Logo Placeholder: Uncomment and update src when logo asset is available */}
+            {/* <Image src="/logo.png" alt="SDC Integral Lex Logo" width={40} height={40} className="mr-3" /> */}
             <span className="font-heading text-2xl font-bold text-maroonDeep">
               SDC Integral Lex
             </span>

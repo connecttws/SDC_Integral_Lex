@@ -65,8 +65,9 @@ export default function Contact() {
                   </div>
                   <div className="ml-6">
                     <h3 className="text-xl font-bold font-heading text-ink mb-2">Phone</h3>
-                    <p className="text-slate">+91-9958188245</p>
-                    <p className="text-slate">+91-8178823988</p>
+                    <p className="text-slate">+91-9810095698</p>
+                    <p className="text-slate">+91-8178025533</p>
+                    <p className="text-slate">+91-9654233987</p>
                   </div>
                 </div>
 
@@ -87,10 +88,8 @@ export default function Contact() {
                   <div className="ml-6">
                     <h3 className="text-xl font-bold font-heading text-ink mb-2">Business Hours</h3>
                     <div className="grid grid-cols-2 gap-x-8 text-slate">
-                      <div>Monday – Friday:</div>
-                      <div>9:00 AM – 6:00 PM</div>
-                      <div>Saturday:</div>
-                      <div>10:00 AM – 2:00 PM</div>
+                      <div>Monday – Saturday:</div>
+                      <div>10:00 AM – 7:00 PM</div>
                       <div>Sunday:</div>
                       <div>Closed</div>
                     </div>
@@ -153,9 +152,9 @@ export default function Contact() {
                   >
                     <option value="">Select a service...</option>
                     <option value="drafting">Drafting of Agreements</option>
-                    <option value="ip">Trademark & Copyright</option>
+                    <option value="ip">IPR Registration</option>
                     <option value="litigation">Litigation & Dispute Resolution</option>
-                    <option value="compliance">Corporate Compliance</option>
+                    <option value="compliance">Company Registration and Compliances</option>
                     <option value="other">Other</option>
                   </select>
                 </div>

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Button } from "@/components/ui/Button";
 import { User, Award } from "lucide-react";
@@ -27,10 +28,21 @@ export default function Team() {
                 className="bg-white rounded-2xl border border-line shadow-sm overflow-hidden flex flex-col md:flex-row hover:shadow-md transition-shadow"
               >
                 {/* Image Placeholder */}
-                <div className="md:w-1/3 bg-inkSoft flex items-center justify-center p-12 min-h-[300px] border-b md:border-b-0 md:border-r border-line/20">
-                  <div className="w-32 h-32 rounded-full bg-ink flex items-center justify-center border-4 border-gold">
-                    <User className="w-16 h-16 text-gold" />
-                  </div>
+                <div className="md:w-1/3 bg-inkSoft flex items-center justify-center p-12 min-h-[300px] border-b md:border-b-0 md:border-r border-line/20 relative">
+                  {member.image ? (
+                    <div className="w-48 h-48 rounded-full border-4 border-gold overflow-hidden relative shadow-lg">
+                      <Image 
+                        src={member.image} 
+                        alt={member.name}
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                  ) : (
+                    <div className="w-48 h-48 rounded-full bg-ink flex items-center justify-center border-4 border-gold shadow-lg">
+                      <User className="w-20 h-20 text-gold" />
+                    </div>
+                  )}
                 </div>
 
                 {/* Profile Info */}
@@ -88,18 +100,21 @@ export default function Team() {
 const teamMembers = [
   {
     name: "Sarthak Mittal",
+    image: "", // Add image path here when available (e.g. "/images/team/sarthak.jpg")
     designation: "Advocate & Company Secretary",
     description: "Pre-eminent lawyer and CS with a profound combination of legal knowledge and business background. Specializes in helping companies navigate complex regulatory environments and prepare for future corporate changes.",
     expertise: ["Corporate Law", "Compliance", "Regulatory Affairs"]
   },
   {
     name: "Divya Kumari",
+    image: "",
     designation: "Advocate",
     description: "Combines extensive legal experience with passionate advocacy to help clients resolve complex challenges creatively and proactively, ensuring the best possible outcomes in difficult situations.",
     expertise: ["Litigation", "Dispute Resolution", "Legal Counseling"]
   },
   {
     name: "Chitra Chanda",
+    image: "",
     designation: "Advocate",
     description: "Highly experienced lawyer focused on litigation and compliance counseling. Brings strong knowledge of her field and a strategic mindset to every case she handles.",
     expertise: ["Litigation", "Compliance", "Legal Advisory"]

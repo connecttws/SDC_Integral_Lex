@@ -172,6 +172,7 @@ const areas = [
     items: [
       "Trademark Registration",
       "Copyright Protection",
+      "Patent Registration",
       "IP Enforcement",
       "Brand Protection"
     ]
@@ -180,6 +181,7 @@ const areas = [
     title: "Litigation & Dispute Resolution",
     icon: <Scale className="w-5 h-5" />,
     items: [
+      "Corporate Litigation",
       "Commercial Litigation",
       "Family Law Matters",
       "Civil & Criminal Cases",
@@ -187,13 +189,14 @@ const areas = [
     ]
   },
   {
-    title: "Corporate Compliance",
+    title: "Corporate Secretarial",
     icon: <Briefcase className="w-5 h-5" />,
     items: [
-      "Regulatory Compliance",
-      "Corporate Governance",
-      "Risk Assessment",
-      "Legal Audits"
+      "Company Registration",
+      "Corporate Compliances",
+      "Mergers and Acquisitions",
+      "Start Up Advisory",
+      "Secretarial Audits"
     ]
   }
 ];

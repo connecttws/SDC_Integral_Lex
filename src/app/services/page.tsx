@@ -17,9 +17,23 @@ export default function Services() {
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-creamSoft mb-6">
             Our <span className="text-goldLight">Legal Services</span>
           </h1>
-          <p className="text-xl text-slate max-w-3xl mx-auto">
+          <p className="text-xl text-slate max-w-3xl mx-auto mb-12">
             Comprehensive Legal Solutions for Every Need. We provide dedicated expertise across multiple practice areas to secure your future.
           </p>
+          
+          {/* Video Placeholder */}
+          <div className="max-w-4xl mx-auto bg-inkSoft rounded-2xl aspect-video border border-line/20 flex items-center justify-center shadow-2xl relative overflow-hidden group">
+            <div className="absolute inset-0 bg-maroon/5 mix-blend-overlay"></div>
+            <div className="text-center relative z-10 transition-transform group-hover:scale-105">
+              <div className="w-20 h-20 rounded-full bg-gold/20 flex items-center justify-center mx-auto mb-4 border border-gold/50 cursor-pointer hover:bg-gold/40 transition-colors">
+                <svg className="w-8 h-8 text-gold translate-x-1" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M8 5v14l11-7z" />
+                </svg>
+              </div>
+              <p className="text-creamSoft font-medium text-lg">Watch Our Services Overview</p>
+              <p className="text-slate text-sm mt-2">[Video Placeholder - Add YouTube/Vimeo link here]</p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -109,17 +123,16 @@ const servicesList = [
     ]
   },
   {
-    title: "Trademark & Copyright",
+    title: "IPR Registration",
     description: "Protect your intellectual assets with our comprehensive trademark and copyright registration services, including robust defense in opposition proceedings.",
     iconBig: <Shield className="w-48 h-48 text-maroon" />,
     iconSmall: <Shield className="w-8 h-8" />,
     subServices: [
-      "Trademark Registration & Renewal",
+      "Trademark Registration",
       "Copyright Protection",
-      "IP Portfolio Management",
-      "Opposition Proceedings",
-      "Infringement Claims",
-      "Brand Protection Strategies"
+      "Patent Registration",
+      "IP Enforcement",
+      "Brand Protection"
     ]
   },
   {
@@ -128,6 +141,7 @@ const servicesList = [
     iconBig: <Scale className="w-48 h-48 text-maroon" />,
     iconSmall: <Scale className="w-8 h-8" />,
     subServices: [
+      "Corporate Litigation",
       "Commercial Litigation",
       "Family Law Matters",
       "Civil Disputes",
@@ -137,17 +151,16 @@ const servicesList = [
     ]
   },
   {
-    title: "Corporate Compliance",
+    title: "Company Registration and Compliances",
     description: "Navigate the complex regulatory environment seamlessly. We ensure absolute compliance for private companies, facilitating smooth and uninterrupted business operations.",
     iconBig: <Building2 className="w-48 h-48 text-maroon" />,
     iconSmall: <Building2 className="w-8 h-8" />,
     subServices: [
-      "Regulatory Compliance",
-      "Corporate Governance",
-      "Risk Assessment",
-      "Policy Development",
-      "Compliance Audits",
-      "Legal Documentation"
+      "Company Registration",
+      "Corporate Compliances",
+      "Mergers and Acquisitions",
+      "Start Up Advisory",
+      "Secretarial Audits"
     ]
   }
 ];
