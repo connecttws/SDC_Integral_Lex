@@ -100,21 +100,21 @@ export default function Team() {
 const teamMembers = [
   {
     name: "Sarthak Mittal",
-    image: "", // Add image path here when available (e.g. "/images/team/sarthak.jpg")
+    image: "/Photo/Sarthak.png", // Add image path here when available (e.g. "/images/team/sarthak.jpg")
     designation: "Advocate & Company Secretary",
     description: "Pre-eminent lawyer and CS with a profound combination of legal knowledge and business background. Specializes in helping companies navigate complex regulatory environments and prepare for future corporate changes.",
     expertise: ["Corporate Law", "Compliance", "Regulatory Affairs"]
   },
   {
     name: "Divya Kumari",
-    image: "",
+    image: "/Photo/Divya.png",
     designation: "Advocate",
     description: "Combines extensive legal experience with passionate advocacy to help clients resolve complex challenges creatively and proactively, ensuring the best possible outcomes in difficult situations.",
     expertise: ["Litigation", "Dispute Resolution", "Legal Counseling"]
   },
   {
     name: "Chitra Chanda",
-    image: "",
+    image: "/Photo/Chitra.png",
     designation: "Advocate",
     description: "Highly experienced lawyer focused on litigation and compliance counseling. Brings strong knowledge of her field and a strategic mindset to every case she handles.",
     expertise: ["Litigation", "Compliance", "Legal Advisory"]

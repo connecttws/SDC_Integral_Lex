@@ -22,14 +22,23 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 w-full bg-cream/90 backdrop-blur-md border-b border-line">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
+        <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <Link href="/" className="flex-shrink-0 flex items-center">
-            {/* Logo Placeholder: Uncomment and update src when logo asset is available */}
-            {/* <Image src="/logo.png" alt="SDC Integral Lex Logo" width={40} height={40} className="mr-3" /> */}
-            <span className="font-heading text-2xl font-bold text-maroonDeep">
-              SDC Integral Lex
-            </span>
+            <Image src="/Photo/logo.png" alt="SDC Integral Lex Logo" width={120} height={120} className="mr-3 object-contain" />
+            <div className="flex flex-col">
+              <span className="font-heading font-bold leading-tight flex items-center">
+                <span className="flex items-start mr-2">
+                  <span className="text-ink text-2xl">S</span>
+                  <span className="text-gold text-2xl translate-y-2 -mx-0.5 font-medium">D</span>
+                  <span className="text-ink text-2xl">C</span>
+                </span>
+                <span className="text-maroonDeep text-2xl">Integral Lex</span>
+              </span>
+              <span className="text-xs font-semibold text-slate tracking-widest uppercase mt-0.5">
+                Your Legal Partner in Growth
+              </span>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
