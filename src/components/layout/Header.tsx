@@ -22,10 +22,10 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 w-full bg-cream/90 backdrop-blur-md border-b border-line">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center py-4">
+        <div className="flex justify-between items-center py-3 md:py-2">
           {/* Logo */}
           <Link href="/" className="flex-shrink-0 flex items-center">
-            <div className="relative w-16 h-16 md:w-[120px] md:h-[120px] mr-2 md:mr-3 flex-shrink-0">
+            <div className="relative w-16 h-16 md:w-[80px] md:h-[80px] mr-2 md:mr-3 flex-shrink-0">
               <Image src="/Photo/logo.png" alt="SDC Integral Lex Logo" fill className="object-contain" />
             </div>
             <div className="flex flex-col">
