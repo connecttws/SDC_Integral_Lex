@@ -25,17 +25,19 @@ export default function Header() {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <Link href="/" className="flex-shrink-0 flex items-center">
-            <Image src="/Photo/logo.png" alt="SDC Integral Lex Logo" width={120} height={120} className="mr-3 object-contain" />
+            <div className="relative w-16 h-16 md:w-[120px] md:h-[120px] mr-2 md:mr-3 flex-shrink-0">
+              <Image src="/Photo/logo.png" alt="SDC Integral Lex Logo" fill className="object-contain" />
+            </div>
             <div className="flex flex-col">
-              <span className="font-heading font-bold leading-tight flex items-center">
-                <span className="flex items-start mr-2">
-                  <span className="text-ink text-2xl">S</span>
-                  <span className="text-gold text-2xl translate-y-2 -mx-0.5 font-medium">D</span>
-                  <span className="text-ink text-2xl">C</span>
+              <span className="font-heading font-bold leading-tight flex flex-wrap md:flex-nowrap items-center">
+                <span className="flex items-start mr-1 md:mr-2">
+                  <span className="text-ink text-xl md:text-2xl">S</span>
+                  <span className="text-gold text-xl md:text-2xl translate-y-1 md:translate-y-2 -mx-0.5 font-medium">D</span>
+                  <span className="text-ink text-xl md:text-2xl">C</span>
                 </span>
-                <span className="text-maroonDeep text-2xl">Integral Lex</span>
+                <span className="text-maroonDeep text-lg md:text-2xl whitespace-nowrap">Integral Lex</span>
               </span>
-              <span className="text-xs font-semibold text-slate tracking-widest uppercase mt-0.5">
+              <span className="text-[9px] md:text-xs font-semibold text-slate tracking-wider md:tracking-widest uppercase mt-0.5 whitespace-nowrap overflow-hidden text-ellipsis">
                 Your Legal Partner in Growth
               </span>
             </div>
